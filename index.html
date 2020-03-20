@@ -7,21 +7,27 @@
     </title>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
-    <header id="header">
-        <nav id="nav-bar">
-            <img src="" id="header-img" src="https://geekandsundry.com/wp-content/uploads/2015/08/Muppets.jpg"></img>
-            <a class="nav-link" href='#video'></a>
-            <a class="nav-link" href='#form'></a>
-            <a class="nav-link" href='#email'></a>
+    <header class="navbar-fixed" id="header">
+        <nav class="purple accent-3" id="nav-bar">
+            <a href="#" class="brand-logo right"><img id="header-img" src="header-img.png" alt="Animal logo"></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a class="nav-link" href='#video'>Video</a></li>
+                <li><a class="nav-link" href='#form'>Contact</a></li>
+                <li><a class="nav-link" href='#email'>Enter e-mail</a></li>
+            </ul>
         </nav>
     </header>
     <div class="container">
-        <h1 id="hero-text">Animal in Action</h1>
+        <h1 class="center" id="hero-text">Animal in Action</h1>
+        <div class="video-container">
         <iframe id="video" width="840" height="630" src="https://www.youtube.com/embed/tgbNymZ7vqY">
         </iframe>
+    </div>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
             <h2>Get on our mailing list</h2>
             <h3>Name</h3>
@@ -29,7 +35,7 @@
             <br>
             <h3>Email</h3>
             <input id="email" type="email" name="email" placeholder="Enter your email.">
- 
+            <input id="submit" type="submit">
         </form>
     </div>
 </body>
